@@ -13,10 +13,13 @@ class Location extends Component {
 
     return (
       <div>
-        <ul>
-          <li>{location[0].city}</li>
-          <li>{location[0].state}</li>
-        </ul>
+        <form className="search-container">
+          <input type="search" name="search" className="search" />
+          <button type="submit" className="search-button">
+            <span className="fas fa-search-location" />
+          </button>
+        </form>
+        {location[0].city}
       </div>
     );
   }
