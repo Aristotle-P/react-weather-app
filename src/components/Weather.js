@@ -9,19 +9,20 @@ class Weather extends Component {
   }
 
   render() {
-    const { weather } = this.props;
+    const { currWeather, conditions, wind } = this.props;
 
     return (
       <div>
         <div className="wrapper">
-          <h3 className="tempature">{weather[0].temp}</h3>
+          <h3 className="tempature">{Math.trunc(currWeather.temp)}</h3>
           <ul className="add-weather">
             <li>Current Contions</li>
-            <li>{weather[0].weather}</li>
+            <li>{(conditions[0] || {}).main}</li>
+            <li>{(conditions[0] || {}).pressure}</li>
             <li>Humidity</li>
-            <li>{weather[0].humidity}</li>
-            <li>Pressure</li>
-            <li>{weather[0].pressure}</li>
+            <li>{currWeather.humidity}%</li>
+            <li>Wind Speed</li>
+            <li>{wind.speed} MPH</li>
           </ul>
         </div>
       </div>
@@ -30,12 +31,14 @@ class Weather extends Component {
 }
 
 Weather.propTypes = {
-  weather: PropTypes.array.isRequired,
+  currWeather: PropTypes.object.isRequired,
   getWeather: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
-  weather: state.weather.currentWeather
+  currWeather: state.weather.currentWeather,
+  conditions: state.weather.weatherConditions,
+  wind: state.weather.wind
 });
 
 export default connect(

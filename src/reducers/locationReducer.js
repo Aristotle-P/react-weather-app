@@ -3,8 +3,7 @@ import { GET_LOCATION } from '../actions/types';
 const initialState = {
   currentLocation: [
     {
-      city: 'New York City',
-      state: 'New York'
+      city: 'New York City'
     }
   ]
 };
