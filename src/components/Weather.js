@@ -5,7 +5,7 @@ import { getWeather } from '../actions/weatherActions';
 
 class Weather extends Component {
   componentDidMount() {
-    this.props.getWeather();
+    this.props.getWeather('New York');
   }
 
   render() {
@@ -25,6 +25,7 @@ class Weather extends Component {
             <li>{wind.speed} MPH</li>
           </ul>
         </div>
+        <div className="wrapper" />
       </div>
     );
   }
