@@ -3,9 +3,10 @@ import { GET_WEATHER } from '../actions/types';
 const initialState = {
   currentWeather: [
     {
-      city: 'New York City',
-      state: 'New York',
-      temp: 32
+      temp: 32,
+      weather: 'cloudy',
+      humidity: '90%',
+      pressure: '27 in'
     }
   ]
 };

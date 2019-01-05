@@ -13,11 +13,17 @@ class Weather extends Component {
 
     return (
       <div>
-        <h1>Your weather</h1>
-        <ul>
-          <li>{weather[0].city}</li>
-          <li>{weather[0].temp}</li>
-        </ul>
+        <div className="wrapper">
+          <h3 className="tempature">{weather[0].temp}</h3>
+          <ul className="add-weather">
+            <li>Current Contions</li>
+            <li>{weather[0].weather}</li>
+            <li>Humidity</li>
+            <li>{weather[0].humidity}</li>
+            <li>Pressure</li>
+            <li>{weather[0].pressure}</li>
+          </ul>
+        </div>
       </div>
     );
   }

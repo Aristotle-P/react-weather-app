@@ -19,7 +19,9 @@ class Location extends Component {
             <span className="fas fa-search-location" />
           </button>
         </form>
-        {location[0].city}
+        <div className="city-container">
+          <p className="city">{location[0].city}</p>
+        </div>
       </div>
     );
   }

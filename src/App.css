@@ -15,8 +15,8 @@ div {
 
 .search {
   border: none;
-  border-radius: 5px 0px 0px 5px;
-  background: #e9e9e9;
+  /* border-radius: 5px 0px 0px 5px; */
+  background: rgb(8, 50, 78);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -35,9 +35,47 @@ div {
   font-size: 1.1em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: silver;
+  background: rgb(6, 69, 110);
   color: white;
   border: none;
   padding: 0.35em 0.75em;
   cursor: pointer;
+}
+
+.city-container {
+  display: flex;
+}
+
+.city {
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  background: rgb(40, 88, 151);
+  height: 300px;
+}
+
+.add-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.tempature {
+  justify-self: flex-start;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
 }
