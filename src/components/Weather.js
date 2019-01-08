@@ -25,7 +25,6 @@ class Weather extends Component {
             <li>{wind.speed} MPH</li>
           </ul>
         </div>
-        <div className="wrapper" />
       </div>
     );
   }

@@ -1,7 +1,10 @@
-import { GET_LOCATION } from '../actions/types';
+import { GET_LOCATION, POST_ERROR } from '../actions/types';
 
 const initialState = {
-  location: {}
+  location: {
+    city: '',
+    errors: ''
+  }
 };
 
 export default function(state = initialState, action) {
@@ -9,7 +12,13 @@ export default function(state = initialState, action) {
     case GET_LOCATION:
       return {
         ...state,
-        location: action.payload
+        city: action.payload,
+        errors: ''
+      };
+    case POST_ERROR:
+      return {
+        ...state,
+        errors: action.payload
       };
     default:
       return state;

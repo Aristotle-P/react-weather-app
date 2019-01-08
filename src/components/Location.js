@@ -5,10 +5,6 @@ import { getLocation } from '../actions/locationActions';
 import { getWeather } from '../actions/weatherActions';
 
 class Location extends Component {
-  // componentDidMount() {
-  //   this.props.getLocation();
-  // }
-
   state = {
     city: ''
   };
@@ -17,13 +13,13 @@ class Location extends Component {
     e.preventDefault();
 
     const { city } = this.state;
+    const { getWeather } = this.props;
 
     const newCity = {
       city
     };
 
-    this.props.getLocation(newCity);
-    this.props.getWeather(newCity.city);
+    getWeather(newCity.city);
 
     this.setState({
       city: ''
@@ -33,7 +29,7 @@ class Location extends Component {
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const { location } = this.props;
+    const { location, errors } = this.props;
     const { city } = this.state;
 
     return (
@@ -52,7 +48,8 @@ class Location extends Component {
           </button>
         </form>
         <div className="city-container">
-          <p className="city">{location.city}</p>
+          <p className="city">{location}</p>
+          <p>{errors}</p>
         </div>
       </div>
     );
@@ -60,13 +57,15 @@ class Location extends Component {
 }
 
 Location.propTypes = {
-  location: PropTypes.object.isRequired,
+  location: PropTypes.string.isRequired,
+  errors: PropTypes.string,
   getLocation: PropTypes.func.isRequired,
   getWeather: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
-  location: state.location.location
+  location: state.location.city,
+  errors: state.location.errors
 });
 
 export default connect(
