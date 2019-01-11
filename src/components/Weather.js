@@ -14,17 +14,23 @@ class Weather extends Component {
     return (
       <div>
         <div className="wrapper">
-          <h3 className="tempature">{Math.trunc(currWeather.temp)}</h3>
-          <ul className="add-weather">
-            <li>Current Contions</li>
-            <li>{(conditions[0] || {}).main}</li>
-            <li>{(conditions[0] || {}).pressure}</li>
-            <li>Humidity</li>
-            <li>{currWeather.humidity}%</li>
-            <li>Wind Speed</li>
-            <li>{wind.speed} MPH</li>
-          </ul>
+          <h3 className="tempature">{Math.trunc(currWeather.temp)}°</h3>
         </div>
+        <div className="weather-wrapper">
+          <div className="conditions weather-container">
+            <p className="weather-heading">Conditions</p>
+            <p>{(conditions[0] || {}).main}</p>
+          </div>
+          <div className="wind weather-container">
+            <p className="weather-heading">Wind</p>
+            <p>{wind.speed} MPH</p>
+          </div>
+          <div className="humidity weather-container">
+            <p className="weather-heading">Humidity</p>
+            <p>{currWeather.humidity}%</p>
+          </div>
+        </div>
+        <div />
       </div>
     );
   }
@@ -32,6 +38,8 @@ class Weather extends Component {
 
 Weather.propTypes = {
   currWeather: PropTypes.object.isRequired,
+  conditions: PropTypes.array.isRequired,
+  wind: PropTypes.object.isRequired,
   getWeather: PropTypes.func.isRequired
 };
 

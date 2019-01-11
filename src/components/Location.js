@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getLocation } from '../actions/locationActions';
 import { getWeather } from '../actions/weatherActions';
 
 class Location extends Component {
@@ -39,6 +38,7 @@ class Location extends Component {
             type="search"
             name="city"
             className="search"
+            placeholder="Enter city here..."
             value={city}
             onChange={this.onChange}
           />
@@ -49,7 +49,7 @@ class Location extends Component {
         </form>
         <div className="city-container">
           <p className="city">{location}</p>
-          <p>{errors}</p>
+          <p className="errors">{errors}</p>
         </div>
       </div>
     );
@@ -59,7 +59,6 @@ class Location extends Component {
 Location.propTypes = {
   location: PropTypes.string.isRequired,
   errors: PropTypes.string,
-  getLocation: PropTypes.func.isRequired,
   getWeather: PropTypes.func.isRequired
 };
 
@@ -70,5 +69,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getLocation, getWeather }
+  { getWeather }
 )(Location);

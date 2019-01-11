@@ -3,7 +3,8 @@ import { GET_WEATHER } from '../actions/types';
 const initialState = {
   currentWeather: {},
   weatherConditions: [],
-  wind: {}
+  wind: {},
+  coord: {}
 };
 
 export default function(state = initialState, action) {
@@ -13,7 +14,8 @@ export default function(state = initialState, action) {
         ...state,
         currentWeather: action.payload.main,
         weatherConditions: action.payload.weather,
-        wind: action.payload.wind
+        wind: action.payload.wind,
+        coord: action.payload.coord
       };
     default:
       return state;
