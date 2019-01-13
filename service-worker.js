@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  ":/aristotle-p.github.io/react-weather-app/precache-manifest.d20ce29498cf5df9428ae70b5ab1a091.js"
+  ":/aristotle-p.github.io/react-weather-app/precache-manifest.54ab3a7be1097dfb6f4d29a1e79e0f7c.js"
 );
 
 workbox.clientsClaim();

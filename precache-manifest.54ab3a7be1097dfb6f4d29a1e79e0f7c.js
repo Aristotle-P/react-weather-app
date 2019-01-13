@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": ":/aristotle-p.github.io/react-weather-app/static/js/runtime~main.aa209fd1.js"
   },
   {
-    "revision": "51f77c22ff564088efd92a3dbf4373cc",
+    "revision": "bcc8f5785384f3a91fc73efb8e5c57dc",
     "url": ":/aristotle-p.github.io/react-weather-app/index.html"
   }
 ];
