@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  ":/aristotle-p.github.io/react-weather-app/precache-manifest.54ab3a7be1097dfb6f4d29a1e79e0f7c.js"
+  "/aristotle-p.github.io/react-weather-app/precache-manifest.76a034b585588ee5c624e009ac24c765.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(":/aristotle-p.github.io/react-weather-app/index.html", {
+workbox.routing.registerNavigationRoute("/aristotle-p.github.io/react-weather-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

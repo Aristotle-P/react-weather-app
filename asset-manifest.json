@@ -1,13 +1,13 @@
 {
-  "main.css": ":/aristotle-p.github.io/react-weather-app/static/css/main.6beab7b4.chunk.css",
-  "main.js": ":/aristotle-p.github.io/react-weather-app/static/js/main.4f149271.chunk.js",
-  "main.js.map": ":/aristotle-p.github.io/react-weather-app/static/js/main.4f149271.chunk.js.map",
-  "static/js/1.93af0918.chunk.js": ":/aristotle-p.github.io/react-weather-app/static/js/1.93af0918.chunk.js",
-  "static/js/1.93af0918.chunk.js.map": ":/aristotle-p.github.io/react-weather-app/static/js/1.93af0918.chunk.js.map",
-  "runtime~main.js": ":/aristotle-p.github.io/react-weather-app/static/js/runtime~main.aa209fd1.js",
-  "runtime~main.js.map": ":/aristotle-p.github.io/react-weather-app/static/js/runtime~main.aa209fd1.js.map",
-  "static/css/main.6beab7b4.chunk.css.map": ":/aristotle-p.github.io/react-weather-app/static/css/main.6beab7b4.chunk.css.map",
-  "index.html": ":/aristotle-p.github.io/react-weather-app/index.html",
-  "precache-manifest.54ab3a7be1097dfb6f4d29a1e79e0f7c.js": ":/aristotle-p.github.io/react-weather-app/precache-manifest.54ab3a7be1097dfb6f4d29a1e79e0f7c.js",
-  "service-worker.js": ":/aristotle-p.github.io/react-weather-app/service-worker.js"
+  "main.css": "/aristotle-p.github.io/react-weather-app/static/css/main.6beab7b4.chunk.css",
+  "main.js": "/aristotle-p.github.io/react-weather-app/static/js/main.b4bd34ec.chunk.js",
+  "main.js.map": "/aristotle-p.github.io/react-weather-app/static/js/main.b4bd34ec.chunk.js.map",
+  "static/js/1.93af0918.chunk.js": "/aristotle-p.github.io/react-weather-app/static/js/1.93af0918.chunk.js",
+  "static/js/1.93af0918.chunk.js.map": "/aristotle-p.github.io/react-weather-app/static/js/1.93af0918.chunk.js.map",
+  "runtime~main.js": "/aristotle-p.github.io/react-weather-app/static/js/runtime~main.c36fc117.js",
+  "runtime~main.js.map": "/aristotle-p.github.io/react-weather-app/static/js/runtime~main.c36fc117.js.map",
+  "static/css/main.6beab7b4.chunk.css.map": "/aristotle-p.github.io/react-weather-app/static/css/main.6beab7b4.chunk.css.map",
+  "index.html": "/aristotle-p.github.io/react-weather-app/index.html",
+  "precache-manifest.76a034b585588ee5c624e009ac24c765.js": "/aristotle-p.github.io/react-weather-app/precache-manifest.76a034b585588ee5c624e009ac24c765.js",
+  "service-worker.js": "/aristotle-p.github.io/react-weather-app/service-worker.js"
 }
